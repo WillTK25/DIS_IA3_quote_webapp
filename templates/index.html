@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block head %}
+
+
+{% endblock %}
+
+
+{% block body %}
+
+    <h1>A Quote Just For You</h1>
+
+    <div class="quoteBox">
+        
+        <p class="quoteText">{{ quoteText }}</p>
+        <p class="quoteText">{{ authorText }}</p>        
+
+    </div>
+
+    <form method="post">
+        <button class="button" type= "submit"> > </button>
+    </form>
+   
+
+{% endblock %}

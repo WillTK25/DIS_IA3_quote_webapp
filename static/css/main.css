@@ -1,0 +1,56 @@
+html {
+    margin: 0px;
+    height: 100%;
+}
+
+
+body {
+    margin: 0;
+    min-height: 100%;
+    font-family: sans-serif;
+    overflow: hidden;
+    background-image: linear-gradient(to top right,#A9F1DF, #FFBBBB)
+}
+
+h1 {
+    text-align: center;
+}
+
+
+.quoteBox {
+    width: 50%;
+    margin: auto;
+    border: 1px solid;
+}
+
+.quoteText {
+    margin: auto;
+    padding: 20px;
+}
+
+.button {
+    background-color: black; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline;
+    font-size: 16px;
+    border-radius: 8px;
+    float: right;
+    margin-right: 10px;
+}
+
+.button:hover {
+    background-color: grey;
+    color: white;
+}
+
+
+
+
+/* #FF5F6D, #FFC371 */
+/* #EA8D8D, #A890FE */
+/* #A9F1DF, #FFBBBB */
+/* #D8B5FF, #1EAE98 */
