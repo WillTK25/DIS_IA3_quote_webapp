@@ -2,24 +2,43 @@
 
 {% block head %}
 
+<!-- Add icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 {% endblock %}
 
 
 {% block body %}
-
-    <h1>A Quote Just For You</h1>
-
-    <div class="quoteBox">
+    <div class="wrapper">
         
-        <p class="quoteText">{{ quoteText }}</p>
-        <p class="quoteText">{{ authorText }}</p>        
+        <header>Quote of the Day</header>
+        
+        <div class="content">
+            <div class="quoteArea">
+                <i class="fa fa-quote-left"></i>
+                <p class="quoteText">{{ quoteText }}</p>
+                <i class="fa fa-quote-right"></i>
+            </div>
+            
+            <div class="author">
+                <span>__</span>
+                <span class="authorName">{{ authorText }}</span>
+            </div>
+        </div>
 
+        <div class="buttons">
+
+            <div class="features">
+                <ul>
+                    <li class="sound"><i class="fa fa-volume-up"></i></li>
+                    <li class="copy"><i class="fa fa-copy"></i></li>
+                </ul>
+                <form method="post">
+                    <button type= "submit"> New Quote </button>
+                </form>
+            </div>
+        </div>
     </div>
 
-    <form method="post">
-        <button class="button" type= "submit"> > </button>
-    </form>
-   
 
 {% endblock %}

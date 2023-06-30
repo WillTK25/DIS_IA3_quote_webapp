@@ -32,7 +32,7 @@ def index():
         quote, author = getQuote(quoteList)         # get quote information
         return render_template('index.html', quoteText=quote, authorText=author)        # returns html page with new quote and author values
     else:
-        return render_template('index.html', quoteText="", authorText="")       # initial template, empty
+        return render_template('index.html', quoteText="Find a quote with the button", authorText="System")       # initial template, empty
 
 if __name__ == "__main__":
     app.run(debug=True)
