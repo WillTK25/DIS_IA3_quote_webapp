@@ -5,6 +5,14 @@
 <!-- Add icon library -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+<script>
+    // When the user clicks on <div>, open the popup
+    function myFunction() {
+      var popup = document.getElementById("myPopup");
+      popup.classList.toggle("show");
+    }
+</script>
+
 {% endblock %}
 
 
@@ -33,12 +41,15 @@
                     <form method="post">
                         <button name="text-to-speech" class="sound"><i class="fa fa-volume-up"></i></button>
                     </form>
-                    <form method="post" >
+                    <form method="post">
+                        <div class="popup" onclick="myFunction()">
                             <button name="copy-to-clipboard" class="copy"><i class="fa fa-copy"></i></button>
+                            <span class="popuptext" id="myPopup" onclick="myFunction()">Quote Copied!</span>
+                        </div>
                     </form>
                 </ul>
                 <form method="post">
-                    <button name="new-quote" type= "submit"> New Quote </button>
+                    <button class="nextQuote" name="new-quote" type= "submit">New Quote</button>
                 </form>
             </div>
         </div>

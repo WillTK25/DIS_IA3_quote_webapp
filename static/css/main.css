@@ -10,7 +10,7 @@ html {
 body {
     min-height: 100vh;
     overflow: hidden;
-    background-image: linear-gradient(to top right, #2d545e, #12343b);
+    background-image: linear-gradient(to top right, #2d545e, #0f2a30);
 
     display: flex;
     align-items: center;
@@ -60,6 +60,7 @@ body {
     font-size: 22px;
     text-align: center;
     word-break: break-all;
+    min-height: 60px;
 }
 
 .content .author {
@@ -78,7 +79,7 @@ body {
 .wrapper .buttons {
     margin-top: auto;
     border-top: 1px solid #ccc;
-    min-height: 90px;
+    min-height: 70px;
 }
 
 .buttons .features {
@@ -98,23 +99,18 @@ body {
     height: 47px;
     width: 47px;
 
-    color: #2d545e;
-    background-color: white;
+    color: white;
+    background-color: #2d545e;
 
     display: flex;
     align-items: center;
     justify-content: center;
     
     border-radius: 50%;
-    border: 2px solid #2d545e;
+    border: none;
     cursor: pointer;
 
     transition: all 0.3s ease;
-}
-
-.features ul button:hover {
-    color: white;
-    background-color: #2d545e;
 }
 
 .features button {
@@ -128,17 +124,70 @@ body {
     background: #2d545e;
 }
 
+.features button:hover {
+    background: #0f2a30;
+}
 
 
 
+/* Popup container */
+.popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+  
+  /* The actual popup (appears on top) */
+.popup .popuptext {
+    visibility: hidden;
+    width: 160px;
+    background-color: #0f2a30;
+    color: white;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -80px;
+}
+  
+  /* Popup arrow */
+.popup .popuptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #0f2a30 transparent transparent transparent;
+}
+  
+/* Toggle this class when clicking on the popup container (hide and show the popup) */
+.popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 0.3s;
+    animation: fadeIn 0.3s
+}
+  
+  /* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+  
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+}
 
 
 
 
 /*
 Night Blue: #2d545e
-
 Night Blue Shadow: #12343b
-
-
+#0f2a30
 */
