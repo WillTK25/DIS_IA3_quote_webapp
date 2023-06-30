@@ -10,7 +10,7 @@ html {
 body {
     min-height: 100vh;
     overflow: hidden;
-    background-image: linear-gradient(to top left, #2d545e, #12343b);
+    background-image: linear-gradient(to top right, #2d545e, #12343b);
 
     display: flex;
     align-items: center;
@@ -92,13 +92,14 @@ body {
     display: flex;
 }
 
-.features ul li {
+.features ul button {
     list-style: none;
     margin: 0 5px;
     height: 47px;
     width: 47px;
 
     color: #2d545e;
+    background-color: white;
 
     display: flex;
     align-items: center;
@@ -111,7 +112,7 @@ body {
     transition: all 0.3s ease;
 }
 
-.features ul li:hover {
+.features ul button:hover {
     color: white;
     background-color: #2d545e;
 }
@@ -126,6 +127,11 @@ body {
     border-radius: 30px;
     background: #2d545e;
 }
+
+
+
+
+
 
 
 

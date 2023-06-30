@@ -30,15 +30,18 @@
 
             <div class="features">
                 <ul>
-                    <li class="sound"><i class="fa fa-volume-up"></i></li>
-                    <li class="copy"><i class="fa fa-copy"></i></li>
+                    <form method="post">
+                        <button name="text-to-speech" class="sound"><i class="fa fa-volume-up"></i></button>
+                    </form>
+                    <form method="post" >
+                            <button name="copy-to-clipboard" class="copy"><i class="fa fa-copy"></i></button>
+                    </form>
                 </ul>
                 <form method="post">
-                    <button type= "submit"> New Quote </button>
+                    <button name="new-quote" type= "submit"> New Quote </button>
                 </form>
             </div>
         </div>
     </div>
-
 
 {% endblock %}
